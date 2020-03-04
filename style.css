@@ -1,0 +1,94 @@
+body{
+    overflow-x: hidden;
+    background-color: #a9dbd8;
+    margin: 0px;
+    padding: 0px;
+}
+#inputs{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#inputs #left{
+    width: 10%;
+    padding: 10px;
+    background-color: #1ebea5;
+    color: white;
+    border: none;
+}
+
+#inputs input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+}
+
+#inputs input::placeholder{
+    text-align: center;
+    color: #1ebea5;
+    font-size: 16px;
+}
+
+#inputs input:focus{
+    outline: 2px solid #1ebea5;
+}
+
+#inputs #right{
+    width: 10%;
+    padding: 10px;
+    background-color: #1ebea5;
+    color: white;
+    border: none;
+}
+
+span{
+    float: right;
+    margin-bottom: 1px;
+    border: 2px solid #e5ffcc;
+    width: 30%;
+    background-color: #e5ffcc;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p{
+    border: 2px solid white;
+    width: 30%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#chat{
+    background-color: red;
+    width: 100%;
+    overflow: auto; 
+    height: 92%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background-color: #a9dbd8;
+}
+
+.chat-1{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.chat-2{
+    width: 100%;
+    margin-top: 10px;
+    height: 60px;
+}
