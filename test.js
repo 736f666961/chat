@@ -1,4 +1,5 @@
 function left(){
+    var audio  = new Audio('./audio/fbchat.mp3');
     var chat = document.getElementById("chat");
     var div = document.createElement("div");
     div.setAttribute("class", "chat-1");
@@ -6,7 +7,7 @@ function left(){
     var message = document.getElementById('input');
 
     var p = document.createElement("p");
-
+    
     var pText = document.createTextNode(message.value);
 
     p.appendChild(pText);
@@ -14,10 +15,13 @@ function left(){
     div.appendChild(p)
     chat.appendChild(div);
 
+
     message.value = "";
+    audio.play();
 }
 
 function right(){
+    var audio  = new Audio('./audio/fbchat.mp3');
     var chat = document.getElementById("chat");
 
     var div = document.createElement("div");
@@ -33,6 +37,6 @@ function right(){
 
     div.appendChild(span)
     chat.appendChild(div);
-
+    audio.play();
     message.value = "";
 }
